@@ -39,6 +39,7 @@ $username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"], 1);
 */
+
 //DATABASE INFORMATIONS
 define("DATABASE_HOST","localhost");
 define("DATABASE_NAME", "jason_project");

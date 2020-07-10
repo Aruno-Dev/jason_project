@@ -19,9 +19,9 @@
         <h2>Crew members</h2>
         <section class="member-list">
             <?php foreach($argonauts as $argonaut): ?>
-              <?php for($i = 1; $i <= count($argonauts); $i++) {?>
-            <p><?= $i.' - '. $argonaut['name'] ?></p>
-              <?php } ?>
+             
+            <p><?= $argonaut['name'] ?></p>
+              
             <?php endforeach ?>
         </section>
     </main>

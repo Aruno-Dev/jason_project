@@ -14,7 +14,6 @@ session_start();//les erreurs avant les sessions et le session_start() après le
 define("PATH_REQUIRE", substr($_SERVER['SCRIPT_FILENAME'], 0, -9));//pour les fonctions d'inclusion php : require - include
 define("PATH", substr($_SERVER['PHP_SELF'], 0, -9));//pour les images, fichiers etc - attribut src par exemple
 
-
 //WEBSIT INFORMATIONS
 define("WEBSITE_TITLE", "The Argonauts");
 define("WEBSITE_NAME", "The Argonauts");
@@ -32,6 +31,14 @@ define("WEBSITE_FACEBOOK_DESCRIPTION", "");
 define("WEBSITE_FACEBOOK_URL", "");
 define("WEBSITE_FACEBOOK_IMAGE", "");
 
+/*
+//ClearDB
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+*/
 //DATABASE INFORMATIONS
 define("DATABASE_HOST","localhost");
 define("DATABASE_NAME", "jason_project");
